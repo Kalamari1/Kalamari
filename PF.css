@@ -409,6 +409,15 @@ display: none;
   font-size: 60px;
 }
 
+@media screen and (max-width: 600px) {
+
+
+  #Inicio{
+    font-size: 46px;
+    margin-top: 10px;
+  }
+}
+
 
 
 

@@ -288,7 +288,7 @@ a{
       
       }
       .compartir img{
-        width: 60%;
+        width: 57%;
         height: auto;
         margin: 0;
       }
@@ -319,7 +319,7 @@ a{
       #sabiasque h2{
         font-family:"Montserrat"; 
         font-weight: 700;
-        font-size: 19px;
+        font-size: 16px;
         color: #FCFAE9;
         background-color: #F7B431;
         padding: 2%;
@@ -375,7 +375,14 @@ a{
       #Inicio{
         font-size: 60px;
       }
-      
+      @media screen and (max-width: 600px) {
+
+
+        #Inicio{
+          font-size: 46px;
+          margin-top: 10px;
+        }
+      }
       
       
       

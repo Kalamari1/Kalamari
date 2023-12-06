@@ -414,6 +414,14 @@ a{
     #Inicio{
       font-size: 60px;
     }
+    @media screen and (max-width: 600px) {
+
+
+      #Inicio{
+        font-size: 46px;
+        margin-top: 10px;
+      }
+    }
     
     
     
@@ -494,46 +502,11 @@ a{
     }
     
     
-    .overlay {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgb(0, 0, 0); /* Fondo semitransparente */
-      justify-content: center;
-      align-items: center;
-      z-index: 999; /* Asegura que esté por encima de otros elementos */
-    }
+ 
     
-    .popup {
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
-    }
+
     
-    #btnCerrar {
-      cursor: pointer;
-    }
-    
-    
-      /*Mojarra frita */
-    
-    .bgmojarrafrita{
-      background-image: url(Img/Fotografia/mojarrafrita.png);
-      background-repeat: no-repeat;
-      background-size:cover;
-      background-position: center center;
-      width: 100% auto;
-      height: auto;
-      min-height: 100vh;
-      background-attachment: fixed;
-      z-index: -2;
-    
-    
-    }
+
     
     
     
