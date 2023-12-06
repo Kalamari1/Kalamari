@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilo.css">
+    <link rel="stylesheet" href="Fritos.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <script defer src="Fritos.js"></script>
+    <script defer src="Main.js"></script>
+
+    <title>Fritos</title>
+</head>
+<body>
+
+    <header id="menu">
+
+        <div class="container__menu">
+
+            <div class="logo">
+                <a href="index.html"> <img src="Recursos/Logo Kalamari.png" alt=""> </a>
+            </div>
+
+            <div class="menu">
+                <i class="fas fa-bars" id="btn_menu"></i>
+                <div id="back_menu"></div>
+
+                <nav id="nav">
+                    <ul>
+                
+                        <li><a href="index.html#nosotros" id="selected">Acerca de</a></li>
+                        <a><li id="categoria">Categorías</a></li>
+                        <li><a href="Index.html#contacto" >Contacto</a></li>
+                    </ul>
+
+                    <div id="categoriaSubMenu">
+                        <ul>
+                            <a href="PF.html"> <li>Platos fuertes</li></a>
+                            <a href="Acompañantes.html"><li>Acompañantes</li></a>
+                            <a href="Fritos.html"><li>Fritos</li></a>
+                            <a href="Arroz.html"><li>Arroz</li></a>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+
+    </header>
+
+
+
+<main>
+
+    <div class="bgfritos" id="bgElement"> 
+
+    <div class="contenedorcuadros">
+
+        <div class="cuadro1">
+
+            <div class="modelo3d">
+
+                <div id="comida">
+                    <model-viewer src="Recursos/3d/Carimañola.glb" ar ar-modes="webxr scene-viewer quick-look"
+                    camera-controls poster="poster.webp"
+                    shadow-intensity="1" 
+                     intensity="0.32" 
+                     shadow-softness="0.97" 
+                     auto-rotate 
+                     camera-orbit="70deg 90deg 10m"
+                     style="--poster-color: transparent;width: 18rem; height: 17rem;"
+                     min-camera-orbit="auto 43deg 40m" 
+                     min-field-of-view="26.12deg" 
+                     max-camera-orbit="auto 82deg auto"
+                     autoplay animation-name="Curve.004Action">
+                    
+                    </model-viewer>
+
+                </div>
+
+            </div>
+
+            <div id="Textocuadros"> 
+                <h2>Carimañola</h2>
+                <p>Nivel: Breve</p>
+                <div class="acocinar">  <a href="Carimañola.html">¡A cocinar!</a> </div>
+            </div>
+
+        </div>
+
+        <div class="cuadro2">
+
+            <div class="modelo3d">
+                <div id="comida">
+                    <model-viewer src="Recursos/3d/Plato Arepa de huevo.glb" ar ar-modes="webxr scene-viewer quick-look"
+                    camera-controls poster="poster.webp"
+                    shadow-intensity="1" 
+                     intensity="0.32" 
+                     shadow-softness="0.97" 
+                     auto-rotate 
+                     camera-orbit="70deg 90deg 10m"
+                     style="--poster-color: transparent;width: 18rem; height: 17rem;"
+                     min-camera-orbit="auto 43deg 40m" 
+                     min-field-of-view="26.12deg" 
+                     max-camera-orbit="auto 82deg auto"
+                     autoplay animation-name="Curve.010Action">
+                    
+                    </model-viewer>
+
+
+                   
+                    </div>
+
+
+
+
+            </div>
+
+            <div id="Textocuadros"> 
+                <h2>Arepa de Huevo</h2>
+                <p>Nivel: Bárbaro</p>
+                <div class="acocinar">  <a href="Arepadehuevo.html">  ¡A cocinar!</a></div> 
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+
+
+
+
+</div>
+</main>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilo.css">
+    <link rel="stylesheet" href="mediaquery.css">
+
+    <link rel="stylesheet" href="PF.css">
+    <script defer src="PF.js"></script>
+    <title>Carne en posta</title>
+</head>
+
+<body>
+
+    <header id="menu">
+
+        <div class="container__menu">
+
+            <div class="logo">
+                <a href="index.html"> <img src="Recursos/Logo Kalamari.png" alt=""> </a>
+            </div>
+
+            <div class="menu">
+                <i class="fas fa-bars" id="btn_menu"></i>
+                <div id="back_menu"></div>
+
+                <nav id="nav">
+                    <ul>
+                
+                        <li><a href="index.html#nosotros" id="selected">Acerca de</a></li>
+                        <a><li id="categoria">Categorías</a></li>
+                        <li><a href="Index.html#contacto" >Contacto</a></li>
+                    </ul>
+
+                    <div id="categoriaSubMenu">
+                        <ul>
+                            <a href="PF.html"> <li>Platos fuertes</li></a>
+                            <a href="Acompañantes.html"><li>Acompañantes</li></a>
+                            <a href="Fritos.html"><li>Fritos</li></a>
+                            <a href="Arroz.html"><li>Arroz</li></a>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+
+    </header>
+
+<main>
+
+
+ <div class="bgcarneposta" id="bgElement"> 
+  
+<div id="Regresar"> </div>
+
+
+<div class="sonido"> <img src="Img/sonido.svg" alt=""> <p>¡Dale <strong>PLAY</strong> y prepárate para cocinar!</p> </div>
+<div class="reproductor" id="reproductor">
+    <div class="music-player-container" id="music-player-container">
+   
+        <div class="controls-music-container">
+                <div class="progress-song-container">
+                        <div class="progress-bar">
+                            <span class="progress"></span>
+                        </div>
+                </div>
+                <div class="time-container">
+                    <span class="time-left" id="CurrentSongTime"></span>
+                    <span class="time-left" id="SongLength"></span>
+                 </div>
+        </div>
+        <audio controls preload="metadata" src="Recursos/Audios/Audios/Carne en Posta_.mp3"></audio>
+        <div class="main-song-controls">
+            <img src="Img/pinfill.svg" alt="" class="icon" id="pin">
+            <img src="Img/Backward.svg" alt="" class="icon" id="Back10">
+            <img src="Img/Play.svg" alt="" class="icon" id="PlayPause">
+            <img src="Img/Forward.svg" alt="" class="icon" id="Plus10">
+            <img src="Img/sonido.svg" alt="" class="icon" id="mute">
+           
+            </div>
+            </div>
+        </audio> 
+
+            </div>
+
+    <div class="contenedoreceta"> 
+       
+        <h2>Nivel: Medio</h2>
+
+        <div class="contenedor1"> 
+        <h1 id="Inicio">Carne en Posta</h1> 
+        <div class="compartir" id="compartir"> <a href="card1.html"><img src="Img/Boton de compartir.svg" alt=""></a> </div>
+        </div>
+        <div class="ilustracion"> <img src="Img/ilustraciones/Carne en Posta.png" alt=""> </div>
+        
+        <div class="sabiasque" id="sabiasque"> 
+
+            <div class="titulo"onclick="toggleDescription()"> <h2>Sabias que...</h2> </div>
+            <div class="descripcionsabias"> 
+            <p>La carne en posta junto al pescado son 
+                los platos típicos y tradicionales de 
+                Cartagena de indias por excelencia, 
+                la carne en posta se puede comer en la
+                situación que tú desees, pero es más común 
+                que las familias se reúnan a comerla en época 
+                decembrina.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="ingredientes"> 
+            
+            <h1>Ingredientes:</h1>
+            <ul onclick="toggleItem(event)" id="lista">
+                <li>Medio kilo de carne de bollito.</li>
+                <li>1 zanahoria.</li>
+                <li>2 cebollas blancas.</li>
+                <li>2 pimentones.</li>
+                <li>1 hoja de laurel.</li>
+                <li>Un poquito de tomillo.</li>
+                <li>1 cucharadita de pasta de ajo.</li>
+                <li>Medio litro de caldo de res.</li>
+                <li>1 panela o piloncillo de azúcar.</li>
+                <li>Sal y pimienta negra, al gusto.</li>
+
+            </ul>
+
+        </div>
+        
+        <div class="preparacion"> 
+         <h1>Preparación:</h1>   
+         <ul id="lista2">
+            <li>Lo primero que hacemos es cortar la carne 
+                en pedazos medianos para asegurar una mejor 
+                cocción. Luego, sazonamos con sal, pimienta y 
+                pasta de ajo al gusto para sazonar.</li>
+            <li>En un sartén grande, a fuego medio, ponemos la carne con un poquito de 
+                aceite y la sellamos 
+                hasta que obtenga una costra por fuera.</li>
+            <li>Cuando ya esté listo eso, en ese mismo sartén donde se selló 
+                la carne, también pondremos la verdura, la zanahoria, 
+                la cebolla, los pimentones, aprovechando todo ese juguito 
+                que dejo para que quede más sabroso y le dé más sabor.</li>
+            <li>Se pone la carne en una olla presión, que es donde se va a cocinar 
+                por mucho más tiempo, al igual que cuando las vegetales o las verduras 
+                estén listas, se meten con la carne en la olla presión y se echa la 
+                panela junto al caldo de res, se tapa la olla presión y se deja cocinar 
+                durante una hora y media,La idea es de que la 
+                carne quede muy tierna y la salsa se reduzca, 
+                concentrando su sabor.</li>
+
+            <li>Cuando ya esté listo, la carne se va a ver de un color más
+                 negrito característico por la panela, se 
+                 corta en tajadas finas o en pedazos finos y 
+                 listo servimos nuestra posta cartagenera. 
+                 Usualmente, esto se acompaña con arroz de 
+                 coco o arroz blanco según tu preferencia.</li>
+        
+         </ul>
+
+        </div>
+
+        <h3>¡Espero que disfrutes de esta auténtica 
+            receta de carne en posta!<br> ¡Buen provecho!</h3>
+
+            <div id="Botonregresar"> <a href="#Regresar">Vamo de vuelta</a>  </div>
+
+    
+
+            
+
+    </div>
+
+
+
+
+
+
+
+
+</div>
+<script defer src="Main.js"></script>
+</main>
+</body>

@@ -1,0 +1,274 @@
+
+
+
+
+
+
+@media screen and (max-width: 1020px){
+
+    .menu nav{
+        position: fixed;
+        top: 0;
+        right: -900px;
+        width: 250px;
+        height: 100vh;
+        padding: 40px;
+        z-index: 999;
+        transition: all 300ms;
+        background-color: black;/*cambia aqui el color fondo abrir menu*/
+    }
+
+    .menu ul{
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .menu ul li{
+        margin-top: 30px;
+        margin-left: 0;
+    }
+
+    .menu ul li a{
+        color: #bebebe;
+    }
+
+    .menu nav img{
+        display: block;
+        width: 60px;
+    }
+
+    #back_menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0,0,0,0.5);
+        display: none;
+    }
+
+    .menu #btn_menu /*cambia aqui el color y el tamaño*/{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background: rgba(255, 255, 255, 0);
+        background-image: url();
+        background-repeat: no-repeat;
+        background-size:contain;
+        
+        background-image: url(Img/Barnav.svg);
+        font-size: 24px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 300ms;
+        padding-left: 1%;
+        margin: 8px auto;
+        margin:50px ;
+    }
+
+    .menu #btn_menu:hover{
+    background-color: #fcfae904;
+    background-image: url(Img/Barnav.svg);
+    }
+   
+
+    .logo img{
+        margin: 10px ; 
+    }
+    
+    #categoriaSubMenu{ display: none;}
+   
+
+     
+    
+}
+
+  
+ @media screen and (max-width: 600px) {
+
+
+
+.landing{
+align-items: center;
+display: flex;
+
+
+}
+.slogan{
+
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .slogan p{
+    
+    color: #fcfae9;
+    font: 800 30px "Montserrat-ExtraBold", sans-serif;   
+    text-align: center;
+  
+    font-size: 1.9rem;
+  }
+
+  .sonido{
+
+  margin: 1%;
+  justify-content: center;
+   align-items:center;
+   display:contents;
+
+  }
+  
+  
+  .sonido p{
+    color: #FFF;
+    font-family: 'Raleway';
+    font-size: 1.9rem;
+    padding: 2%;
+    width: 100%;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    text-align: center;
+  
+  }
+  
+  
+  .sonido img{
+  justify-content: center;
+    width: 17%;
+    height: 17%;
+    margin: 1%;
+
+  }
+  
+
+
+
+
+
+    .categoria {
+      width: 48%; /* Ajusta el ancho según tus necesidades para pantallas más grandes */
+      
+    }
+
+
+    .descripcion {
+        font-size: 12px;
+    }
+    #botoncategoria {
+        display: none;
+        background: #482BEB;
+        color: #fff;
+        border: none;
+        padding: 5px;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        border-radius: 62px;
+        font-size: 10px;
+      }
+
+      .categoria h2 {
+        font-size: 20px;
+        display: flex;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        transition: writing-mode 0.3s ease; /* Agregar transición para un cambio suave */
+      }
+      
+      .categoria:hover h2 {
+        writing-mode: horizontal-tb; /* Cambiar a la orientación normal cuando se hace hover */
+      }
+
+
+      .nosotros_contenedor {
+        flex-direction: column; /* Apila los elementos uno encima del otro */
+        align-items: center;
+        
+      }
+    
+      .caro, .Vale, .Cami {
+        margin-bottom: 20px; /* Añade espacio entre los elementos */
+        margin: 0;
+      }
+      
+      /* Ajusta el tamaño de las imágenes para pantallas pequeñas */
+      #iconcaro, #iconvale, #iconcami {
+        max-width: 150px;
+        height: auto;
+      }
+      .nosotros_contenedor {
+        flex-direction: column; /* Apila los elementos uno encima del otro */
+        align-items: center;
+        
+      }
+    
+      .caro, .Vale, .Cami {
+        margin-bottom: 20px; /* Añade espacio entre los elementos */
+        margin: 0;
+      }
+      
+      /* Ajusta el tamaño de las imágenes para pantallas pequeñas */
+      #iconcaro, #iconvale, #iconcami {
+        max-width: 150px;
+        height: auto;
+      }
+    
+      /* Ajusta el tamaño del texto para pantallas pequeñas */
+      h1, p {
+        font-size: 16px;
+      }
+
+      #lineas{
+        display: none;
+      }
+ 
+        .contacto {
+          height: auto; /* Ajusta la altura automáticamente para adaptarse al contenido */
+        }
+      
+        #formulario {
+          max-width: 100%; /* Ocupa el ancho completo en pantallas pequeñas */
+       
+        }
+
+        #formulario label {
+            display: block;
+            text-align: center;
+            
+            
+          }
+
+      
+
+
+      }
+
+
+
+
+  @media screen and (min-width: 1024px) {
+    .categoria {
+      width: 29%; /* Restaura el ancho original para pantallas más grandes si es necesario */
+    }
+    .categoria h2{
+        font-size: 25px;
+    }
+    .descripcion {
+        font-size: 17px;
+    }
+    #botoncategoria {
+        display: none;
+        background: #482BEB;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        border-radius: 62px;
+      }
+  }
+

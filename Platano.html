@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilo.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="stylesheet" href="Acompañantes.css">
+    <script defer src="Acompañantes.js"></script>
+    <title>Plátano en tentación</title>
+</head>
+
+<body>
+
+    <header id="menu">
+
+        <div class="container__menu">
+
+            <div class="logo">
+                <a href="index.html"> <img src="Recursos/Logo Kalamari.png" alt=""> </a>
+            </div>
+
+            <div class="menu">
+                <i class="fas fa-bars" id="btn_menu"></i>
+                <div id="back_menu"></div>
+
+                <nav id="nav">
+                    <ul>
+                
+                        <li><a href="index.html#nosotros" id="selected">Acerca de</a></li>
+                        <a><li id="categoria">Categorías</a></li>
+                        <li><a href="Index.html#contacto" >Contacto</a></li>
+                    </ul>
+
+                    <div id="categoriaSubMenu">
+                        <ul>
+                            <a href="PF.html"> <li>Platos fuertes</li></a>
+                            <a href="Acompañantes.html"><li>Acompañantes</li></a>
+                            <a href="Fritos.html"><li>Fritos</li></a>
+                            <a href="Arroz.html"><li>Arroz</li></a>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+
+    </header>
+
+<main>
+
+
+ <div class="bgplatano" id="bgElement"> 
+  
+<div id="Regresar"> </div>
+
+
+<div class="sonido"> <img src="Img/sonido.svg" alt=""> <p>¡Dale <strong>PLAY</strong> y prepárate para cocinar!</p> </div>
+<div class="reproductor" id="reproductor">
+    <div class="music-player-container" id="music-player-container">
+   
+        <div class="controls-music-container">
+                <div class="progress-song-container">
+                        <div class="progress-bar">
+                            <span class="progress"></span>
+                        </div>
+                </div>
+                <div class="time-container">
+                    <span class="time-left" id="CurrentSongTime"></span>
+                    <span class="time-left" id="SongLength"></span>
+                 </div>
+        </div>
+        <audio controls preload="metadata" src="Recursos/Audios/Audios/Plátano en tentación_.mp3"></audio>
+        <div class="main-song-controls">
+            <img src="Img/pinfill.svg" alt="" class="icon" id="pin">
+            <img src="Img/Backward.svg" alt="" class="icon" id="Back10">
+            <img src="Img/Play.svg" alt="" class="icon" id="PlayPause">
+            <img src="Img/Forward.svg" alt="" class="icon" id="Plus10">
+            <img src="Img/sonido.svg" alt="" class="icon" id="mute">
+           
+            </div>
+            </div>
+        </audio> 
+
+            </div>
+
+    <div class="contenedoreceta"> 
+       
+        <h2>Nivel: Breve</h2>
+
+        <div class="contenedor1"> 
+        <h1 id="Inicio">Plátano en tentación</h1> 
+        <div class="compartir" id="compartir"> <a href="card5.html"><img src="Img/Boton de compartir3.svg" alt=""></a> </div>
+        </div>
+        <div class="ilustracion"> <img src="Img/ilustraciones/Plátano en tentación.png" alt=""> </div>
+        
+        <div class="sabiasque" id="sabiasque"> 
+
+            <div class="titulo"onclick="toggleDescription()"> <h2>Sabias que...</h2> </div>
+            <div class="descripcionsabias"> 
+            <p>La gaseosa más antigua del mundo es la Kola Román, 
+                con 21 años de diferencia en el mercado antes de la 
+                salida oficial 
+                de Coca Cola al mundo.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="ingredientes"> 
+            
+            <h1>Ingredientes:</h1>
+            <ul onclick="toggleItem(event)" id="lista">
+                <li>1 o 2 plátanos maduros.</li>
+                <li>1 Kola Román personal (350 ml) o agua con esencia de Kola.</li>
+                <li>2 rajas de canela.</li>
+                <li>Azúcar al gusto.</li>
+                
+
+            </ul>
+
+        </div>
+        
+        <div class="preparacion"> 
+         <h1>Preparación:</h1>   
+         <ul id="lista2">
+            <li>Pelar los plátanos y cortarlos de tres o cuatro pedazos por plátano.</li>
+
+            <li>En una olla grande, vas a colocar esos trozos de los plátanos, le vas a agregar la Kola Román o el
+                agua con esencia de Kola, las rajas de canela y azúcar al gusto.</li>
+
+            <li>La cantidad de azúcar va a depender de tu preferencia por lo dulce, pero se 
+                recomienda empezar con aproximadamente 1/2 taza de azúcar.</li>
+
+            <li>Vas a poner esa olla a fuego medio y vas a cocinar hasta que los plátanos estén cocidos 
+                y que el líquido se haya reducido a un jarabe espeso. Esto va a tomar 
+                aproximadamente 20-30 minutos.</li>
+
+            <li>Obviamente, asegúrate de estar moviendo ocasionalmente los plátanos para que no se peguen en el fondo.</li>
+
+            <li>Una vez que los plátanos estén tiernos y el jarabe esté espeso, 
+                quitas la olla y sirves tu plátano en tentación.</li>
+
+            <li>Y listo, ya están tus plátanos en tentación.</li>
+
+         </ul>
+
+        </div>
+
+        <h3>¡Espero que disfrutes de esta auténtica receta de plátano en tentación!<br> ¡Buen provecho!</h3>
+
+            <div id="Botonregresar"> <a href="#Regresar">Vamo de vuelta</a>  </div>
+
+    
+
+            
+
+    </div>
+
+
+
+
+</div>
+<script defer src="Main.js"></script>
+</main>
+
+</body>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalamari</title>
+    <link rel="stylesheet" href="Estilo.css">
+    <link rel="stylesheet" href="mediaquery.css">
+   
+    <script defer src="Main.js"></script>
+
+</head>
+
+
+<body>
+
+<div class="bghome" id="bgElement"> 
+    <header id="menu">
+
+        <div class="container__menu">
+            <div class="logo">
+                <a href="index.html"> <img src="Recursos/Logo Kalamari.png" alt=""> </a>
+            </div>
+            <div class="menu">
+                <i class="fas fa-bars" id="btn_menu"></i>
+                <div id="back_menu"></div>
+                <nav id="nav">
+                    <ul>
+                       
+                        <li><a href="#nosotros" id="selected">Acerca de</a></li>
+                        <a><li id="categoria">Categorías</a></li>
+                        <li><a href="#contacto" >Contacto</a></li>
+                    </ul>
+
+                    <div id="categoriaSubMenu">
+                        <ul>
+                            <a href="PF.html"> <li>Platos fuertes</li></a>
+                            <a href="Acompañantes.html"><li>Acompañantes</li></a>
+                            <a href="Fritos.html"><li>Fritos</li></a>
+                            <a href="Arroz.html"><li>Arroz</li></a>
+                        </ul>
+                      </div>
+
+
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+     
+    <main>
+
+        <div class="background-container">
+           
+
+        </div>
+
+
+
+
+     
+        <div class="container__cover"> 
+       
+
+    </div>
+
+            <div class="landing">
+                
+                <div class="slogan">  <p>CARTAGENA EN CADA SABOR, KALAMARI EN CADA PLATO</p> </div>
+                <div class="sonido">  <img src="Img/sonido.svg" alt=""> <p>Para una mejor experiencia activa el sonido y usa audífonos </p>  </div>
+
+               
+            </div>
+
+
+            <div class="categorias"> 
+
+                <div class="contenedor-categorias">
+
+                    <div class="categoria" id="platosfondo"onmouseover="expandirCategoria(this)" onmouseout="contraerCategorias()">
+                      <h2>Platos fuertes</h2>
+                      <p class="descripcion">Sabores que llenan tu corazón.</p>
+                      <a href="PF.html"><button id="botoncategoria">¡Descúbrelos!</button></a>
+                    </div>
+                  
+                    <div class="categoria" id="acompañantesfondo" onmouseover="expandirCategoria(this)" onmouseout="contraerCategorias()">
+                      <h2>Acompañantes</h2>
+                      <p class="descripcion">Los mejores aliados de tus platos.</p>
+                      <a href="Acompañantes.html"> <button id="botoncategoria">¡Acompaña tus comidas!</button></a>
+                    </div>
+                  
+                    <div class="categoria" id="fritosfondo" onmouseover="expandirCategoria(this)" onmouseout="contraerCategorias()">
+                      <h2>Fritos</h2>
+                      <p class="descripcion">Crujientes y llenos de sabor.</p>
+                      <a href="Fritos.html"><button id="botoncategoria">¡A Fritar!</button></a>
+                    </div>
+                  
+                    <div class="categoria" id="arrozfondo" onmouseover="expandirCategoria(this)" onmouseout="contraerCategorias()">
+                      <h2>Arroz</h2>
+                      <p class="descripcion">El corazón de la cocina costeña en cada grano.</p>
+                      <a href="Arroz.html"><button id="botoncategoria">¡A la Olla!</button></a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+            <div class="nosotros" id="nosotros"> 
+
+                
+                <p id="textokalamari"> KALAMARI,  es una declaración de amor 
+                    por la comida, la historia y la comunidad de 
+                    Cartagena de Indias. Juntos, buscamos salvaguardar, 
+                    reproducir y transmitir recetas, técnicas y saberes 
+                    que hacen de ella una rica y diversa herencia culinaria.</p>
+
+
+                <div class="nosotros_contenedor"> 
+
+                    <div class="caro"> 
+                        <a href="https://www.instagram.com/p/Ch0fK2lrvSz/?igshid=MzRlODBiNWFlZA==" target="_blank">
+                             <img id="iconcaro" src="Img/iconcaro.png" alt="">
+                        <h2>CARITO</h2>
+                        <p id="textonosotros">"Todo el sueldo se me va en comida"</p>
+                        </a>
+                    </div>
+
+                    <svg id="lineas" xmlns="http://www.w3.org/2000/svg" width="3" height="200" viewBox="0 0 3 200" fill="none">
+                        <path d="M1.5 1.5V199" stroke="#FCFAE9" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+
+
+                    <div class="vale"> 
+                        <a href="https://www.instagram.com/slowy_041/" target="_blank">
+                            <p id="textonosotros"> <img id="iconvale" src="Img/iconvale.png" alt="">
+                        <h2>VALE</h2>
+                        <p id="textonosotros">“Me gusta el coctel de camarón”.</p> </a>
+                    </div>
+
+                    <svg id="lineas" xmlns="http://www.w3.org/2000/svg" width="3" height="200" viewBox="0 0 3 200" fill="none">
+                        <path d="M1.5 1.5V199" stroke="#FCFAE9" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+
+                    
+
+                    <div class="Cami"> 
+                        <a href="https://www.instagram.com/camilomoreloph/" target="_blank">  <img id="iconcami" src="Img/iconcami.png" alt=""> 
+                        <h2>CAMI</h2>
+                        <p id="textonosotros">"Barriga llena corazon contento"</p> </a>
+                    </div>
+
+
+
+
+
+                </div>
+
+
+
+
+            
+            </div>
+
+
+            <div class="contacto" id="contacto"> 
+                <div class="contactocontenedor">  
+                    <h1>CUÉNTANOS QUE TE PARECIÓ</h1>
+                    <p>Comparte tu experiencia con nosotros.</p>
+
+
+                    <div id="formulario">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    
+                        <label for="correo">Correo Electrónico</label>
+                        <input type="email" id="correo" name="correo" required>
+                    
+                        <label for="comentarios">Comentarios</label>
+                        <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+                    
+                        <button onclick="enviarFormulario()">Enviar</button>
+                      </div>
+                </div>
+              
+
+               
+
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="footerpos">
+
+            <footer> 
+            <img src="Img/Footerimg.png" alt="">
+            
+            </footer>
+    
+        </div>
+    
+
+
+
+
+    </main>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+    
+</body>
+</html>
