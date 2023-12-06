@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilo.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="stylesheet" href="Arroz.css">
+    <script defer src="Arroz.js"></script>
+    <title>Arroz de Mariscos</title>
+</head>
+
+<body>
+
+    <header id="menu">
+
+        <div class="container__menu">
+
+            <div class="logo">
+                <a href="index.html"> <img src="Recursos/Logo Kalamari.png" alt=""> </a>
+            </div>
+
+            <div class="menu">
+                <i class="fas fa-bars" id="btn_menu"></i>
+                <div id="back_menu"></div>
+
+                <nav id="nav">
+                    <ul>
+                
+                        <li><a href="index.html#nosotros" id="selected">Acerca de</a></li>
+                        <a><li id="categoria">Categorías</a></li>
+                        <li><a href="Index.html#contacto" >Contacto</a></li>
+                    </ul>
+
+                    <div id="categoriaSubMenu">
+                        <ul>
+                            <a href="PF.html"> <li>Platos fuertes</li></a>
+                            <a href="Acompañantes.html"><li>Acompañantes</li></a>
+                            <a href="Fritos.html"><li>Fritos</li></a>
+                            <a href="Arroz.html"><li>Arroz</li></a>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+
+    </header>
+
+<main>
+
+
+ <div class="bgfrijolito" id="bgElement"> 
+  
+<div id="Regresar"> </div>
+
+
+<div class="sonido"> <img src="Img/sonido.svg" alt=""> <p>¡Dale <strong>PLAY</strong> y prepárate para cocinar!</p> </div>
+<div class="reproductor" id="reproductor">
+    <div class="music-player-container" id="music-player-container">
+   
+        <div class="controls-music-container">
+                <div class="progress-song-container">
+                        <div class="progress-bar">
+                            <span class="progress"></span>
+                        </div>
+                </div>
+                <div class="time-container">
+                    <span class="time-left" id="CurrentSongTime"></span>
+                    <span class="time-left" id="SongLength"></span>
+                 </div>
+        </div>
+        <audio controls preload="metadata" src="Recursos/Audios/Audios/Arroz de frijolito_.mp3"></audio>
+        <div class="main-song-controls">
+            <img src="Img/pinfill.svg" alt="" class="icon" id="pin">
+            <img src="Img/Backward.svg" alt="" class="icon" id="Back10">
+            <img src="Img/Play.svg" alt="" class="icon" id="PlayPause">
+            <img src="Img/Forward.svg" alt="" class="icon" id="Plus10">
+            <img src="Img/sonido.svg" alt="" class="icon" id="mute">
+           
+            </div>
+            </div>
+        </audio> 
+
+            </div>
+
+    <div class="contenedoreceta"> 
+       
+        <h2>Nivel: Breve</h2>
+
+        <div class="contenedor1"> 
+        <h1 id="Inicio">Arroz de frijolito</h1> 
+        <div class="compartir" id="compartir"> <a href="card10.html"><img src="Img/Boton de compartir.svg" alt=""></a> </div>
+        </div>
+        <div class="ilustracion"> <img src="Img/ilustraciones/Arroz de marisco.png" alt=""> </div>
+        
+        <div class="sabiasque" id="sabiasque"> 
+
+            <div class="titulo"onclick="toggleDescription()"> <h2>Sabias que...</h2> </div>
+            <div class="descripcionsabias"> 
+            <p>El arroz de frijolito también conocido como “moros y cristianos” hace referencia a la historia española de la lucha de los cristianos y los musulmanes durante 8 siglos y finalmente culminado en 1492.
+                Mayormente, el arroz de frijolito o arroz congrí es popularmente conocido en la ciudad de cuba y originario de África.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="ingredientes"> 
+            
+            <h1>Ingredientes:</h1>
+            <ul onclick="toggleItem(event)" id="lista">
+                <li>2 tazas de arroz de tu preferencia.</li>
+                <li>1 taza de frijolitos rojos o negros, incluso los que te consigas, hasta los de lata te sirven.</li>
+                <li>1 cebolla grande.</li>
+                <li>2 dientes de ajo.</li>
+                <li>1 pimentón verde.</li>
+                <li>1 tomate maduro.</li>
+                <li>1 cucharadita de comino en polvo.</li>
+                <li>1 hoja de laurel.</li>
+                <li>Sal y pimienta al gusto.</li>
+                <li>4 tazas de agua.</li>
+
+            </ul>
+
+        </div>
+        
+        <div class="preparacion"> 
+         <h1>Preparación:</h1>   
+         <ul id="lista2">
+            <li>Primero, preparar los frijolitos: si son de lata, nada más los tienes que escurrir bien y si son frescos, obviamente muchísimo mejor.</li>
+
+            <li>En un sartén grande, vas a echar un chorrito de aceite y echar la cebolla y el ajo hasta que queden doraditos y huela sabroso. </li>
+
+            <li>Tiras, el pimentón y el tomate bien picaditos y dejas que se mezclen bien en la sartén hasta que estén blanditos. A eso le agregas los frijolitos, el comino, la hoja de laurel, la sal y la pimienta. </li>
+
+            <li>Agregas el arroz previamente bien lavado y lo mezclas todo, se echa el agua, se revuelve bien y dejemos que todo se cocine a fuego lento. Siempre echándole el ojito para estar pendiente del arroz.</li>
+
+            <li>La idea es que nos quede un arroz bien suelto y sabroso, cuando ya el arroz haya absorbido todo el líquido y este bien suavecito, apagamos el fogón y dejamos que se repose y servimos nuestro arroz. Y tenemos listo nuestro arroz de frijolito.</li>
+            
+            
+
+         </ul>
+
+        </div>
+
+        <h3>¡Espero que disfrutes de esta auténtica receta de arroz de frijolito!<br> ¡Buen provecho!</h3>
+
+            <div id="Botonregresar"> <a href="#Regresar">Vamo de vuelta</a>  </div>
+
+    
+
+            
+
+    </div>
+
+
+
+
+
+
+
+
+</div>
+<script defer src="Main.js"></script>
+</main>
+</body>

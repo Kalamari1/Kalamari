@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilo.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="stylesheet" href="Arroz.css">
+    <script defer src="Arroz.js"></script>
+    <title>Arroz de coco</title>
+</head>
+
+<body>
+
+    <header id="menu">
+
+        <div class="container__menu">
+
+            <div class="logo">
+                <a href="index.html"> <img src="Recursos/Logo Kalamari.png" alt=""> </a>
+            </div>
+
+            <div class="menu">
+                <i class="fas fa-bars" id="btn_menu"></i>
+                <div id="back_menu"></div>
+
+                <nav id="nav">
+                    <ul>
+                
+                        <li><a href="index.html#nosotros" id="selected">Acerca de</a></li>
+                        <a><li id="categoria">Categorías</a></li>
+                        <li><a href="Index.html#contacto" >Contacto</a></li>
+                    </ul>
+
+                    <div id="categoriaSubMenu">
+                        <ul>
+                            <a href="PF.html"> <li>Platos fuertes</li></a>
+                            <a href="Acompañantes.html"><li>Acompañantes</li></a>
+                            <a href="Fritos.html"><li>Fritos</li></a>
+                            <a href="Arroz.html"><li>Arroz</li></a>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+
+    </header>
+
+<main>
+
+
+ <div class="bgcoco" id="bgElement"> 
+  
+<div id="Regresar"> </div>
+
+
+<div class="sonido"> <img src="Img/sonido.svg" alt=""> <p>¡Dale <strong>PLAY</strong> y prepárate para cocinar!</p> </div>
+<div class="reproductor" id="reproductor">
+    <div class="music-player-container" id="music-player-container">
+   
+        <div class="controls-music-container">
+                <div class="progress-song-container">
+                        <div class="progress-bar">
+                            <span class="progress"></span>
+                        </div>
+                </div>
+                <div class="time-container">
+                    <span class="time-left" id="CurrentSongTime"></span>
+                    <span class="time-left" id="SongLength"></span>
+                 </div>
+        </div>
+        <audio controls preload="metadata" src="Recursos/Audios/Audios/Arroz de coco_.mp3"></audio>
+        <div class="main-song-controls">
+            <img src="Img/pinfill.svg" alt="" class="icon" id="pin">
+            <img src="Img/Backward.svg" alt="" class="icon" id="Back10">
+            <img src="Img/Play.svg" alt="" class="icon" id="PlayPause">
+            <img src="Img/Forward.svg" alt="" class="icon" id="Plus10">
+            <img src="Img/sonido.svg" alt="" class="icon" id="mute">
+           
+            </div>
+            </div>
+        </audio> 
+
+            </div>
+
+    <div class="contenedoreceta"> 
+       
+        <h2>Nivel: Medio</h2>
+
+        <div class="contenedor1"> 
+        <h1 id="Inicio">Arroz de coco</h1> 
+        <div class="compartir" id="compartir"> <a href="card8.html"><img src="Img/Boton de compartir.svg" alt=""></a> </div>
+        </div>
+        <div class="ilustracion"> <img src="Img/ilustraciones/Arroz de coco.png" alt=""> </div>
+        
+        <div class="sabiasque" id="sabiasque"> 
+
+            <div class="titulo"onclick="toggleDescription()"> <h2>Sabias que...</h2> </div>
+            <div class="descripcionsabias"> 
+            <p>A pesar de no tener muy claro su origen, se dice que este plato proviene de las mezclas culinarias de pueblos africanos, indígenas y españoles. Además, es 
+                el acompañante por ley para la cazuela de mariscos, pescado frito y otros platos tradicionales.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="ingredientes"> 
+            
+            <h1>Ingredientes:</h1>
+            <ul onclick="toggleItem(event)" id="lista">
+                <li>1 coco seco mediano.</li>
+                <li>2 tazas de arroz de tu preferencia.</li>
+                <li>Sal al gusto.</li>
+                <li>4 cucharadas soperas de panela o azúcar.</li>
+                <li>Agua tibia.</li>
+            </ul>
+
+        </div>
+        
+        <div class="preparacion"> 
+         <h1>Preparación:</h1>   
+         <ul id="lista2">
+            <li>Primero debemos partir el coco a la mitad, quitamos su cáscara y rallamos toda 
+                la pulpa blanca en trozos pequeños para asegurarnos de que nos quede en la licuadora.</li>
+
+            <li>Entonces todo lo rallado se coloca en la licuadora, se añaden dos tazas de 
+                agua caliente y se licuan hasta que quede una consistencia uniforme.</li>
+
+            <li>En otro recipiente, se cuela esa mezcla para separar la leche de coco de los trozos licuados.</li>
+
+            <li>Luego en el caldero en donde uno suele realizar su arroz, se vierten dos tazas de leche de coco, cuando este a punto de hervir se agrega azúcar y sal dependiendo de tu preferencia. 
+                Por último se incorpora el arroz y se cocina a fuego medio como uno usualmente hace el arroz.</li>
+
+            <li>Por lo general todo esto se extiende a 10 minutos si está en fuego medio, 
+                pero si está a fuego bajo va a tomar 20 minutos y listo ya tienes tu arroz de coco.</li>
+
+         </ul>
+
+        </div>
+
+        <h3>¡Espero que disfrutes de esta auténtica receta de arroz de coco! <br> ¡Buen provecho!</h3>
+
+            <div id="Botonregresar"> <a href="#Regresar">Vamo de vuelta</a>  </div>
+
+    
+
+            
+
+    </div>
+
+
+
+
+
+
+
+
+</div>
+<script defer src="Main.js"></script>
+</main>
+</body>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilo.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="stylesheet" href="Fritos.css">
+    <script defer src="Fritos.js"></script>
+    <title>Arepa de Huevo</title>
+</head>
+
+<body>
+
+    <header id="menu">
+
+        <div class="container__menu">
+
+            <div class="logo">
+                <a href="index.html"> <img src="Recursos/Logo Kalamari.png" alt=""> </a>
+            </div>
+
+            <div class="menu">
+                <i class="fas fa-bars" id="btn_menu"></i>
+                <div id="back_menu"></div>
+
+                <nav id="nav">
+                    <ul>
+                
+                        <li><a href="index.html#nosotros" id="selected">Acerca de</a></li>
+                        <a><li id="categoria">Categorías</a></li>
+                        <li><a href="Index.html#contacto" >Contacto</a></li>
+                    </ul>
+
+                    <div id="categoriaSubMenu">
+                        <ul>
+                            <a href="PF.html"> <li>Platos fuertes</li></a>
+                            <a href="Acompañantes.html"><li>Acompañantes</li></a>
+                            <a href="Fritos.html"><li>Fritos</li></a>
+                            <a href="Arroz.html"><li>Arroz</li></a>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+
+    </header>
+
+<main>
+
+
+ <div class="bgarepadehuevo" id="bgElement"> 
+  
+<div id="Regresar"> </div>
+
+
+<div class="sonido"> <img src="Img/sonido.svg" alt=""> <p>¡Dale <strong>PLAY</strong> y prepárate para cocinar!</p> </div>
+<div class="reproductor" id="reproductor">
+    <div class="music-player-container" id="music-player-container">
+   
+        <div class="controls-music-container">
+                <div class="progress-song-container">
+                        <div class="progress-bar">
+                            <span class="progress"></span>
+                        </div>
+                </div>
+                <div class="time-container">
+                    <span class="time-left" id="CurrentSongTime"></span>
+                    <span class="time-left" id="SongLength"></span>
+                 </div>
+        </div>
+        <audio controls preload="metadata" src="Recursos/Audios/Audios/Arepa de huevo_.mp3"></audio>
+        <div class="main-song-controls">
+            <img src="Img/pinfill.svg" alt="" class="icon" id="pin">
+            <img src="Img/Backward.svg" alt="" class="icon" id="Back10">
+            <img src="Img/Play.svg" alt="" class="icon" id="PlayPause">
+            <img src="Img/Forward.svg" alt="" class="icon" id="Plus10">
+            <img src="Img/sonido.svg" alt="" class="icon" id="mute">
+           
+            </div>
+            </div>
+        </audio> 
+
+            </div>
+
+    <div class="contenedoreceta"> 
+       
+        <h2>Nivel: Medio</h2>
+
+        <div class="contenedor1"> 
+        <h1 id="Inicio">Arepa 'e huevo</h1> 
+        <div class="compartir" id="compartir"> <a href="card3.html"><img src="Img/Boton de compartir2.svg" alt=""></a> </div>
+        </div>
+        <div class="ilustracion"> <img src="Img/ilustraciones/arepa con huevo.png" alt=""> </div>
+        
+        <div class="sabiasque" id="sabiasque"> 
+
+            <div class="titulo"onclick="toggleDescription()"> <h2>Sabias que...</h2> </div>
+            <div class="descripcionsabias"> 
+            <p>•Acompañamiento de picante: En la costa, las arepas de huevo se sirven a menudo con ají picante. Puedes preparar un ají casero mezclando chiles picantes, cilantro, cebolla, 
+                ajo, sal y limón en una licuadora. Sirve las arepas con este ají para darles un toque picante y delicioso.
+<br>
+                •Rellenos creativos: Si quieres darle un giro a tus arepas, prueba rellenarlas con ingredientes como jamón, queso, o incluso camarones picados para una versión marina, así como las que venden en el festival del frito.</p>
+            </div>
+        </div>
+
+        
+
+        <div class="ingredientes"> 
+            
+            <h1>Ingredientes:</h1>
+            <ul onclick="toggleItem(event)" id="lista">
+                <li>1 harina pan de medio kilo o un kilo dependiendo de cuantas arepas vayas a sacar.</li>
+                <li>1 taza de agua tibia.</li>
+                <li>1 cucharadita de sal.</li>
+                <li>Pa’ el relleno:</li>
+                <li>250 gramos de carne molida (puede ser res o cerdo).</li>
+                <li>1 cucharada de aceite</li>
+                <li>1 cebolla picada.</li>
+                <li>2 dientes de ajo picados.</li>
+                <li>1 cucharadita de comino en polvo.</li>
+                <li>Sal y pimienta al gusto.</li>
+                <li>2 a 3 o 4 huevos los que salgan, para las arepas que vayan a salir.</li>
+
+            </ul>
+
+        </div>
+        
+        <div class="preparacion"> 
+         <h1>Preparación:</h1>   
+         <ul id="lista2">
+            <li>En una taza grande vas a mezclar la harina con sal, 
+                poquito a poquito,
+                le agregas el agua tibia y lo mezclas hasta que tengas 
+                una masa suavecita y moldeable. Lo dejas reposar por unos minutos.</li>
+            <li>Vas a calentar el aceite a fuego medio, agregas la cebolla y 
+                el ajo, los sofríes hasta que te queden doraditos.</li>
+            <li>Vas a agregar la carne molida y la cocinas hasta que esté completamente cocida, luego añades el comino, 
+                la sal y la pimienta y los cocinas durante unos minuticos más.</li>
+            <li>De la masa que previamente habías hecho, vas a hacer una bolita, la vas a aplastar y en un caldero con aceite 
+                la vas a fritar de 2 a 3 minutos. La idea de todo eso es de que la arepa se infle.</li>
+
+            <li>Vas a sacar la arepa, deja que se escurra y con un cuchillo le vas a hacer cortecito lateral en la punta de la arepa, ¿Qué vas a hacer allí?, vas a echar la porción de carne que tú desees, 
+                echas el huevo y la vuelves a fritar durante 2 a 3 minutos por lado de nuevo.</li>
+
+            <li>La idea es de que se vean doraditas, y listo ya tienes tu arepa de huevo.</li>
+         </ul>
+
+        </div>
+
+        <h3>¡Espero que disfrutes de esta auténtica receta de arepa 'e huevo!<br> ¡Buen provecho!</h3>
+
+            <div id="Botonregresar"> <a href="#Regresar">Vamo de vuelta</a>  </div>
+
+    
+
+            
+
+    </div>
+
+
+
+
+
+
+
+
+</div>
+<script defer src="Main.js"></script>
+</main>
+</body>

@@ -1,0 +1,684 @@
+.bgArroz{
+    background-color:  #482BEB;
+    background-image: url(Img/bgcontacto.png);
+    background-repeat:repeat;
+    background-size:cover;
+    background-position: center center;
+    width: 100vh auto;
+   max-height: max-content;
+    background-attachment: fixed;
+    z-index: -1;
+    }
+        
+
+    
+a{
+    text-decoration: none;
+  }
+ 
+  
+  
+  main{
+  justify-content: center;
+  font-family: "Montserrat";
+  
+  }
+  .contenedorcuadros {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      height: 100vh;
+    }
+    
+    .cuadro1,
+    .cuadro2,.cuadro3 {
+      height: 75%;
+      width: 30%; /* Puedes ajustar esto según tus preferencias */
+      background-color:#FCFAE9;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 10%;
+      padding: 1%;
+      margin: 0.30%;
+      text-align: center;
+      border-radius: 15px;
+      
+    }
+    
+    .modelo3d {
+      height: 50vh;
+  margin: 2%;
+    }
+  
+    #comida{
+      justify-content: center;
+      display: flex;
+  
+  
+  
+  
+    }
+  
+    #Textocuadros{
+     
+      color: #482BEB;
+      text-align: center;
+      font-family: "Montserrat";
+      font-size: 0.9rem;
+      font-style: normal;
+    }
+  
+    #Textocuadros p{
+      font-size: 1rem;
+    }
+  
+  
+  .acocinar{
+     
+  margin-left: 1%;
+  margin-right: 1%;
+  
+      
+    }
+  
+    .acocinar{
+      border-radius: 100px;
+    padding-top:1% ;
+    padding-bottom:1% ;
+    width:auto;
+      background-color: #482BEB;
+      text-align: center;
+      font-family: "Montserrat";
+      font-size: 20px;
+      text-decoration: none;
+      
+      
+    }
+  .acocinar a{
+  color: #FCFAE9;
+  }
+  
+  
+  
+  
+  
+    @media screen and (max-width: 600px) {
+      .cuadro1,
+      .cuadro2,.cuadro3 {
+        width: 100%; 
+      }
+    }
+  
+
+    .bgcoco{
+      background-image: url(Img/Fotografia/arroz\ de\ coco.png);
+      background-repeat: no-repeat;
+      background-size:cover;
+      background-position: center center;
+      width: 100% auto;
+      height: auto;
+      min-height: 100vh;
+      background-attachment: fixed;
+      z-index: -2;
+    }
+  
+      .bgmarisco{
+        background-image: url(Img/Fotografia/Arroz\ de\ marisco.png);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center center;
+        width: 100% auto;
+        height: auto;
+        min-height: 100vh;
+        background-attachment: fixed;
+        z-index: -2;
+      }
+      
+      .bgfrijolito{
+        background-image: url(Img/Fotografia/arroz\ de\ frijolito.png);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center center;
+        width: 100% auto;
+        height: auto;
+        min-height: 100vh;
+        background-attachment: fixed;
+        z-index: -2;
+      }
+  
+  
+    
+
+
+         
+.ilustracion{
+
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top:450px;
+  text-align: right;
+  pointer-events: none;
+  }
+  .ilustracion img{
+    width: 50%;
+    margin: 0;
+    
+  }
+  
+  
+  @media (max-width: 767px) {
+      /* Estilos específicos para dispositivos móviles */
+      .ilustracion  {
+          opacity: 0.5; /* Reducir la opacidad en dispositivos móviles */
+      }
+  }
+    
+  
+  
+
+
+  .reproductor{
+
+    transition: right 0.3s, bottom 0.3s;
+    cursor: move;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    margin-bottom: 2%;
+    }
+    
+    
+    .reproductor-desanclado {
+      position: absolute;
+      cursor: move;
+      transition: none;
+      position: fixed;
+    }
+    .music-player-container{
+      cursor: pointer;
+      background:#482beb98;
+      backdrop-filter: blur(10px);
+      height: fit-content;
+      width: 25rem;
+      height: 9vw;
+      border-radius: 20px;
+      padding: 2.5rem 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      box-shadow: 0px 2px 8px rgba(0,0,0,0.35);
+    }
+    
+    .title-music-container{
+      width: 80%;
+      height: 80%;
+      width: fit-content;
+      color: white;
+      margin-right: auto;
+      margin-left: 10%;
+    }
+    
+    .song-title{
+      font-weight: 600;
+      font-size: 17px;
+      letter-spacing: 0.5px;
+    }
+    
+    .song-author{
+      margin-top: 0.1rem;
+      font-size: 12px;
+      color: rgb(167, 167, 167);
+      letter-spacing: 0.1px;
+    }
+    
+    .controls-music-container{
+      width: 80%;
+      height: fit-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    
+    .progress-song-container{
+      margin-top: 0.6rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    
+    .progress-bar{
+      height: 3px;
+      border-radius: 3px;
+      width: 100%;
+      background-color: rgb(102, 102, 102);
+      position: relative;
+    }
+    
+    .progress{
+      position: absolute;
+      height: 100%;
+      width: 0%;
+      border-radius: 3px;
+      background-color: white;
+    }
+    
+    .time-container{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: rgb(167, 167, 167);
+      font-size: 12px;
+    }
+    
+    .time-left{
+      margin-top: 0.3rem;
+    }
+    
+    .main-song-controls{
+      height: 30px;
+      width: 100%;
+      margin-top: 1rem;
+      margin-bottom: 0.9rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    
+    .icon{
+      height: 90%;
+      width: auto;
+      opacity: 0.6;
+      cursor: pointer;
+    }
+    
+    .icon:hover{
+      opacity: 1;
+    }
+    
+    audio{
+      display: none;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .contenedor1{
+      display: flex;
+      align-items: center;
+      
+    }
+    .compartir{
+      margin-left: 2%;
+      justify-content: center;
+      cursor: pointer;
+    
+    }
+    .compartir img{
+      width: 60%;
+      height: auto;
+      margin: 0;
+    }
+    
+    
+    
+    .contenedoreceta{
+      background-image:url(Img/Fondo\ recetas.png);
+      background-size: cover;
+      background-attachment: scroll;
+      font-family:'Raleway' ;
+      padding: 6%;
+     
+    }
+    
+    .contenedoreceta h1,h2 {
+    color: #482BEB;
+    padding-top: 0.4%;
+    padding-bottom: 0.7%;
+    }
+    .contenedoreceta h2{
+    font-family:"Montserrat"; 
+    font-style: normal;
+    font-weight: 400;
+    
+    }
+    
+    #sabiasque h2{
+      font-family:"Montserrat"; 
+      font-weight: 700;
+      font-size: 19px;
+      color: #FCFAE9;
+      background-color: #482BEB;
+      padding: 2%;
+      width: 10rem;
+      height: auto;
+      border-radius: 77px;
+      margin: 0.5rem;
+    }
+    
+    .descripcionsabias{
+    display: none;
+    }
+    
+    .sabiasque {
+      max-width: 500px;
+      
+    }
+    
+    .titulo {
+      
+      cursor: pointer;
+      text-align: center;
+      transition: opacity 0.3s ease; /* Agregamos una transición para el cambio de opacidad */
+    }
+    
+    .titulo:hover {
+      opacity: 0.8; /* Opacidad al pasar el ratón */
+    }
+    
+    .descripcionsabias {
+      display: none;
+      opacity: 0; /* La descripción comienza oculta con opacidad 0 */
+      transition: opacity 0.3s ease; /* Agregamos una transición para el cambio de opacidad */
+    }
+    
+    .sabiasque:hover .descripcionsabias {
+      opacity: 1; /* Al pasar el ratón sobre el contenedor sabiasque, mostramos la descripción */
+      display: block;
+      position: absolute;
+      width: 28%;
+      background-color: #482BEB;
+      padding: 1%;
+      margin: 0.5rem;
+      color: #FCFAE9;
+      border-radius: 10px;
+    }
+    
+    
+    
+    
+    #Inicio{
+      font-size: 60px;
+    }
+    
+    
+    
+    
+    li {
+    
+      user-select: none;
+      list-style-type: none;
+      margin-bottom: 5px;
+      
+    }
+    
+    #lista li{
+      cursor: pointer;
+     list-style-type:disc
+    
+    }
+    
+    li.checked {
+      text-decoration: line-through;
+      color: #888;
+      
+    }
+    
+    #lista2 li{
+      list-style-type:decimal;
+      padding-top: 2%;
+    }
+    
+    
+    
+    
+    
+    
+    .sonido{
+      margin: 0%;
+      padding-top: 8%;
+      padding-bottom: 4rem;
+      justify-content: center;
+      text-align: center;
+    }
+    .sonido img{
+      width: 1.9rem;
+      height: 1.9rem;
+      justify-content: space-around;
+    }
+    
+    
+    
+    .contenedoreceta h3{
+      font-family:"Montserrat"; 
+      color: #482BEB;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-top: 2%;
+    
+    }
+    
+    #Botonregresar{
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-top: 3%;
+    }
+    
+    #Botonregresar a{
+    background-color: #482BEB;
+    text-align: center;
+    border-radius: 10px;
+    width: auto;
+    align-items: center;
+    padding: 1%;
+    margin-top: 1.7%;
+    text-decoration: none;
+    color: #FCFAE9;
+      
+    }
+    
+    
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgb(0, 0, 0); /* Fondo semitransparente */
+      justify-content: center;
+      align-items: center;
+      z-index: 999; /* Asegura que esté por encima de otros elementos */
+    }
+    
+    .popup {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    
+    #btnCerrar {
+      cursor: pointer;
+    }
+    
+    
+      /*Mojarra frita */
+    
+    .bgmojarrafrita{
+      background-image: url(Img/Fotografia/mojarrafrita.png);
+      background-repeat: no-repeat;
+      background-size:cover;
+      background-position: center center;
+      width: 100% auto;
+      height: auto;
+      min-height: 100vh;
+      background-attachment: fixed;
+      z-index: -2;
+    
+    
+    }
+    
+    
+    
+      
+     /* card */
+    
+    .bgcard{
+      background-color: #FCFAE9;
+      background-image: url(Img/bgcard1.png);
+      background-repeat: no-repeat;
+      background-size:cover;
+      margin: 0%;
+      width: 100% auto;
+      height: 100h;
+      min-height: 100vh;
+      background-attachment: fixed;
+      z-index: -1;
+    }
+    .contenedor{
+     justify-items: center;
+     justify-content: center;
+      display: flex;
+      margin: 0%;
+      width: 100% auto;
+      height: auto;
+    }
+    .card{
+    width: 70vh;
+    height: 75vh;
+    background-color: #ffffff;
+    justify-content: center;
+    margin-top: 8%;
+    margin: 1%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    
+    .descripcioncard{
+    text-align: left;
+    padding: 3%;
+    }
+    
+    .titulocard{
+      color: #482BEB;
+      margin-top: 2%;
+    font-family:  'Sofia Sans';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 117%; /* 42.12px */
+    }
+    
+    .textocard{
+      justify-content: space-between;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2%;
+    margin: 2%;
+    }
+    .textocard p{
+      margin-top: 2%;
+      color: #482BEB;
+    font-family: 'Montserrat';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 117%; /* 37.44px */
+    margin-bottom: 1%;
+    }
+    
+    .textocard img{
+      margin-top: 2%;
+      margin: 0%;
+      
+    }
+    
+    .barra{
+    margin-top: 2%;
+    text-align: center;
+    border-radius: 26px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    
+    }
+    
+    .barracont{
+      justify-content: center;
+      display:flex;
+      padding: 1%;
+    }
+    
+    .barcompartir,.barenlace,.barregresar{
+      margin: 2%;
+    }
+    
+    
+    .iconos{
+      justify-content: center;
+      background-color: #FFF;
+      position: relative;
+      flex-wrap: wrap;
+    }
+    
+    
+    .iconos img {
+      position: absolute;
+      width: 4vh;
+    height: auto;
+      top:44%;
+      left: 45%;
+      transform: translate(-50%, -50%);
+      z-index: 2; /* Asegura que la imagen esté encima del SVG */
+    }
+         
+    
+    .iconos svg{
+      z-index: -1;
+    width: 11vh;
+    height: auto;
+      margin: 0%;
+    }
+    
+    .bardescripcion{
+      color: #482BEB;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    }
+   .modelo3d {
+          height: 50vh;
+      margin: 2%;
+      justify-content: center;
+      display: flex;
+        }
+
+        @media screen and (max-width: 600px) {
+
+          .sabiasque:hover .descripcionsabias {
+            width: 70%;
+            display: block;
+            position: absolute;
+            background-color: #482BEB;
+            padding: 2%;
+            margin: 0.9rem;
+            color: #FCFAE9;
+            border-radius: 10px;
+           
+          }
+        }
